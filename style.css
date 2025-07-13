@@ -36,6 +36,9 @@
   header .header_menu {
     display: none !important;
   }
+  main .modal {
+    background-image: url(img/bgbsnstablet.png);
+  }
   main .modal_title {
     max-width: 360px;
     font-family: Roboto;
@@ -154,22 +157,22 @@
   }
 }
 @media (max-width: 768px) {
-  header .header {
+  body header .header {
     align-items: center;
   }
-  header .header_container--nav {
+  body header .header_container--nav {
     display: none;
   }
-  header .header_content {
+  body header .header_content {
     display: none;
   }
-  header .header_burgermen {
+  body header .header_burgermen {
     background: none;
     border: 1px solid #FFFFFF;
     outline: none;
     cursor: pointer;
   }
-  header .header .header_menu {
+  body header .header .header_menu {
     position: fixed;
     top: 0;
     right: -100%;
@@ -182,10 +185,10 @@
     display: flex !important;
     flex-direction: column;
   }
-  header .header .header_menu.open {
+  body header .header .header_menu.open {
     right: 0;
   }
-  header .header .header_menu--close {
+  body header .header .header_menu--close {
     background: none;
     border: none;
     padding: 0;
@@ -196,21 +199,21 @@
     width: 40px;
     height: 40px;
   }
-  header .header .header_menu--close:hover svg {
+  body header .header .header_menu--close:hover svg {
     fill: #2196F3;
     transition: 0.3s ease-in-out;
   }
-  header .header .header_menu--close img {
+  body header .header .header_menu--close img {
     width: 100%;
     height: 100%;
     display: block;
   }
-  header .header .header_menu--nav {
+  body header .header .header_menu--nav {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
-  header .header .header_menu--nav > a {
+  body header .header .header_menu--nav > a {
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 40px;
@@ -223,19 +226,19 @@
     margin-top: 10px;
     margin-bottom: 16px;
   }
-  header .header .header_menu--nav > a:hover {
+  body header .header .header_menu--nav > a:hover {
     font-size: 40px;
     transition: 0.3s ease-out;
     color: #2196F3;
   }
-  header .header .header_menu--contacts {
+  body header .header .header_menu--contacts {
     margin-top: 302px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding-left: 30px;
   }
-  header .header .header_menu--contacts--phone {
+  body header .header .header_menu--contacts--phone {
     font-family: Roboto;
     font-weight: 500;
     font-size: 34px;
@@ -245,11 +248,11 @@
     text-decoration: none;
     margin-bottom: 16px;
   }
-  header .header .header_menu--contacts--phone:hover {
+  body header .header .header_menu--contacts--phone:hover {
     font-size: 40px;
     transition: 0.3s ease-out;
   }
-  header .header .header_menu--contacts--email {
+  body header .header .header_menu--contacts--email {
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -258,11 +261,11 @@
     color: #757575;
     text-decoration: none;
   }
-  header .header .header_menu--contacts--email:hover {
+  body header .header .header_menu--contacts--email:hover {
     color: #2196F3;
     transition: 0.3s ease;
   }
-  header .header .header_menu--social {
+  body header .header .header_menu--social {
     margin-top: 24px;
     width: 100%;
     max-width: 357px;
@@ -272,7 +275,7 @@
     margin-top: 64px;
     margin-left: 30px;
   }
-  header .header .header_menu--social--link {
+  body header .header .header_menu--social--link {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
@@ -283,54 +286,57 @@
     border-right: 2px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
   }
-  header .header .header_menu--social--link:hover {
+  body header .header .header_menu--social--link:hover {
     font-size: 27px;
     transition: 0.3s ease;
   }
-  header .header .header_menu--social--link:nth-child(4) {
+  body header .header .header_menu--social--link:nth-child(4) {
     border: none;
   }
-  header .header_burgermen {
+  body header .header_burgermen {
     display: block;
     background: none;
     border: none;
     cursor: pointer;
   }
-  main .advantage_container {
+  body main .modal {
+    background-image: url(img/bgbsnsphone.png);
+  }
+  body main .advantage_container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
   }
-  main .advantage_container--details {
+  body main .advantage_container--details {
     max-width: 450px;
   }
-  main .advantage_container--details--title {
+  body main .advantage_container--details--title {
     text-align: center;
   }
-  main .team_container {
+  body main .team_container {
     max-width: 450px;
     display: grid;
     grid-template-columns: 1fr;
   }
-  main .clients_container {
+  body main .clients_container {
     max-width: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  footer .footer {
+  body footer .footer {
     max-width: 450px;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
   }
-  footer .footer_container {
+  body footer .footer_container {
     align-items: center !important;
     flex-direction: column;
   }
-  footer .footer_container--info {
+  body footer .footer_container--info {
     text-align: center;
   }
-  footer .footer_container--info--content {
+  body footer .footer_container--info--content {
     padding-bottom: 0px !important;
   }
 }
